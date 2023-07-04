@@ -24,6 +24,7 @@
   --20x: 5.5rem;
 
   --little-small:10px;
+  --little-little-small:12px;
   --small:14px;
   --small-medium-medium:15px;
   --small-medium:16px;
@@ -152,6 +153,7 @@ section{
 pre{
   max-height: 300px;
   overflow: scroll;
+  width: 100%;
 }
   pre::-webkit-scrollbar{
     width:10px;;
@@ -350,4 +352,56 @@ span{
 h5{
   font-size: var(--little);
   padding: var(--2x) 0;
+}
+
+@media screen and (max-width: 860px) {
+  header {
+      padding: var(--2x);
+  }
+  nav {
+    display: none !important;
+  }
+  aside{
+    width: fit-content;
+    padding-right: var(--4x);
+    height: 100vh;
+    position: fixed;
+    left:-100%;
+    background-color: var(--background2);
+    backdrop-filter: blur(2px);
+    z-index: 12;
+    border:0;
+  }
+  aside ul{
+    width: 40vw;
+    
+    display: flex; 
+    flex-direction: column;
+    gap: 10%;
+    padding:0;
+  }
+  aside ul li{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+    padding:0;
+  }
+  main{
+    width: 100%;
+    padding: var(--5x);
+  }
+  section{
+    padding: var(--4x);
+  }
+  pre{
+    padding: 0;
+    margin:0;
+  }
+  code{
+    padding: 0;
+    margin:0;
+    font-size: 0.30rem;
+  }
+ 
 }
