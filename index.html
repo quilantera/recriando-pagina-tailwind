@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="Recriando TailwindCss" />
+  <meta
+      property="og:description"
+      content="Projeto para recriar o TailwindCss"
+  />
+  <meta
+      property="og:image"
+      content="https://res.cloudinary.com/arcjet-media/image/upload/v1608734952/z8hzeszc9eb3sp3vp3qc.jpg"
+  />
+  <meta
+      property="og:url"
+      content="https://quilantera.github.io/recriandoTailwind/"
+  />
+  <meta property="og:type" content="website" />
+  <title>Recriando TailwindCss</title>
+  <link
+            rel="icon"
+            type="image/jpg"
+            href="https://res.cloudinary.com/arcjet-media/image/upload/v1608734952/z8hzeszc9eb3sp3vp3qc.jpg"
+  />
+  <link rel="stylesheet" href="styles.CSS" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/CSS2?family=Fira+Code:wght@500;600&Inter:wght@400;500;600;700;800;900"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <img src="logo.jpg" />
+    <nav>
+      <a href="#getStarted">Get Started</a>
+      <a href="#documents">Documentos</a>
+      <a href="#components">Componentes</a>
+      <a href="#styles"> Estilos</a>
+    </nav>
+  </header>
+  <aside>
+    <ul>
+      <li><a href="#getStarted">Get Started</a></li>
+      <li><a href="#installation">Instalação</a></li>
+      <li><a href="#documents">Documentos</a></li>
+      <li><a href="#components">Components</a></li>
+      <li><a href="#styles">Estilos</a></li>
+      <li>
+        <a href="https://tailwindui.com/templates?ref=sidebar">Templates</a>
+      </li>
+    </ul>
+  </aside>
+  <main>
+    <section id="getStarted">
+      <span> installation</span>
+      <h2>Get started with Tailwind CSS</h2>
+      <p>
+        Bem-vindo à documentação do Tailwind CSS! Aqui você
+        encontrará todas as informações necessárias para começar a
+        usar e explorar os recursos incríveis deste framework de
+        estilo.
+      </p>
+      <p>
+        O Tailwind CSS é uma ferramenta poderosa e flexível que
+        permite criar interfaces de usuário ricas e responsivas de
+        forma eficiente. Com uma abordagem utility-first, o Tailwind
+        CSS fornece uma ampla variedade de classes CSS prontas para
+        uso, permitindo que você estilize seus elementos HTML de
+        maneira rápida e consistente.
+      </p>
+      <p>
+        Explore a documentação completa do Tailwind CSS para
+        aprender mais sobre cada um desses passos e obter exemplos
+        práticos. Esteja preparado para se surpreender com a rapidez
+        e eficiência que o Tailwind CSS traz ao seu fluxo de
+        trabalho de desenvolvimento front-end.
+      </p>
+    </section>
+    <section id="installation">
+      <h3>Instalação</h3>
+      <p>
+        Para começar a usar o Tailwind CSS, você precisa instalá-lo
+        em seu projeto. Existem várias formas de fazer isso, mas a
+        maneira mais comum é por meio de um gerenciador de pacotes,
+        como o npm ou o yarn. Veja abaixo um exemplo básico de
+        instalação usando o npm:
+      </p>
+      <h4>1- Instale TailwindCSS</h4>
+      <div class="code-content">
+        <pre>
+        <code>
+          npm install -D tailwindCSS
+          npx tailwindCSS init</code>
+      </pre>
+      </div>
+      <h4>2- Configure seu template de patch</h4>
+      <div class="code-content">
+        <pre>
+          <code> 
+            /** @type {import('tailwindCSS').Config} */
+            module.exports = {
+              content: ["./src/**/*.{html,js}"],
+              theme: {
+                extend: {},
+              },
+              plugins: [],
+            }</code>
+        </pre>
+      </div>
+    </section>
+    <section id="documents">
+      <h3>Documentos</h3>
+      <p>
+        Nesta seção, você encontrará todos os documentos necessários
+        para entender os conceitos e recursos oferecidos pelo
+        Tailwind CSS. Desde os princípios básicos até as técnicas
+        avançadas, tudo é coberto para ajudá-lo a dominar este
+        framework de estilo poderoso. Explore os seguintes
+        documentos:
+      </p>
+      <ul>
+        <li>
+          <b>Tailwind CSS:</b> Visão geral e recursos principais
+        </li>
+        <li>
+          <b>Guia de estilo:</b> Diretrizes para criar um estilo
+          consistente em seu projeto
+        </li>
+        <li>
+          <b>Utilitários:</b> Descrição de todos os utilitários
+          disponíveis e como utilizá-los
+        </li>
+        <li>
+          <b>Responsividade:</b> Como criar layouts responsivos
+          usando classes específicas
+        </li>
+        <li>
+          <b>Personalização:</b> Como personalizar o Tailwind CSS
+          para atender às suas necessidades específicas
+        </li>
+      </ul>
+    </section>
+    <section id="components">
+      <h3>Components</h3>
+      <p>
+        Nesta seção, você encontrará uma coleção de componentes
+        prontos para uso, juntamente com exemplos de código e
+        orientações sobre como utilizá-los em seu projeto. Aproveite
+        a biblioteca de componentes do Tailwind CSS para agilizar o
+        desenvolvimento e criar interfaces visualmente atraentes.
+      </p>
+      <h4>Exemplos de Botões</h4>
+      <div>
+        <a class="button ex1" href="#botao1"><span>Exemplo 1</span></a>
+        <a class="button ex2" href="#botao2">
+          <span>Exemplo 2</span><i></i>
+        </a>
+        <a class="button ex3" href="#botao3"><span>Exemplo 3</span></a>
+        <a class="button ex4" href="#botao4"><span>Exemplo 4</span></a>
+        <a class="button ex5" href="#botao5"><span>Exemplo 5</span></a>
+      </div>
+    </section>
+    <section id="styles">
+      <h2>Estilos</h2>
+      <p>
+        Todos os botões foram estilizados de maneira padrão, tais
+        como
+      </p>
+      <div class="code-content">
+        <pre>
+          <code>
+            button{
+              display: block;
+              margin: 2.75rem;
+              min-width: 10rem;
+              min-height: 2.75rem; 
+              transition: 0.5s;
+              font-size: 1.1rem;
+              font-family: 'Inter', sans-serif; /*Necessário instalação*/
+              text-transform: uppercase;
+              font-weight: 500;
+              padding: 0.75rem; 
+              letter-spacing: 0.2px;
+            }
+          </code>
+        </pre>
+      </div>
+
+      <div id="botao1">
+        <h4>Exemplo Botão 1</h4>
+        <p>
+          Neste exemplo, irei mostrar a estilização do botão do
+          exemplo 1.
+        </p>
+        <button class="ex1">Exemplo 1</button>
+        <div class="show-code">
+          <div class="content">
+            <h5>código HTML</h5>
+            <div class="code-content">
+              <pre>
+                <code>
+                  ...
+                  &lt;button class="ex1"&gt; Exemplo 1 &lt;/button&gt;
+                  ...
+                </code>
+              </pre>
+            </div>
+          </div>
+          <div class="content">
+            <h5>código CSS</h5>
+            <div class="code-content">
+              <pre>
+                <code>
+                  .ex1{
+                    border: 2px solid #E2E8F0;
+                    background: #0B1121;
+                    color: #E2E8F0;
+                   
+                  }
+                  .ex1:hover{
+                    background: #E2E8F0;
+                    color: #0B1121;
+                    box-shadow: 1px 1px 20px #E2E8F0;
+                    letter-spacing: 0.6px;
+                  }
+
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="botao2">
+        <h4>Exemplo Botão 2</h4>
+        <p>
+          Neste exemplo, irei mostrar a estilização do botão do
+          exemplo 2.
+        </p>
+        <button class="ex2"><span>Exemplo 2</span><i></i></button>
+        <div class="show-code">
+          <h5>código HTML</h5>
+          <div class="content">
+            <div class="code-content">
+              <pre>
+                  <code>
+                    ...
+                    &lt;button class="ex2"&gt; 
+                      &lt;span&gt; Exemplo 2 &lt;/span&gt;
+                      &lt;i&gt; &lt;/i&gt;
+                    &lt;/button&gt;
+                    ...
+                  </code>
+                </pre>
+            </div>
+          </div>
+          <div class="content">
+            <h5>código CSS</h5>
+            <div class="code-content">
+              <pre>
+                  <code>
+                    .ex2{
+                      background: #E2E8F0;
+                      border: none;
+                      position: relative;
+                      transition: 0.5s
+                    }
+                    .ex2::before{
+                      content: " ";
+                      position: absolute;
+                      inset: 2px;
+                      background: #0B1121;
+                      
+                    }
+                    .ex2 span{
+                      position: relative;
+                      z-index: 1;
+                      color: #E2E8F0;
+                      background: #0B1121;
+                    }
+                    .ex2 i{
+                      position: absolute;
+                      inset: 0px;
+                      display: block;
+                    }
+                    .ex2 i::before{
+                      content: " ";
+                      position: absolute;
+                      top: -3px;
+                      left: 80%;
+                      transform: translateX(-90%);
+                      width: 10px;
+                      height: 6px;
+                      background:#0B1121;
+                      border: 2px solid #ff1867;
+                    
+                      transition: 0.5s ;
+                    }
+                    .ex2:hover {
+                      background: #ff1867;
+                      letter-spacing: 1px;
+                    }
+                    .ex2:hover span{
+                      letter-spacing: 0.6px;
+                    }
+                    .ex2:hover i::before{
+                      width: 6px;
+                      left: 10%;
+                    }
+                    .ex2 i::after{
+                      content: " ";
+                      position: absolute;
+                      bottom: -3px;
+                      left: 20%;
+                      transform: translateX(-90%);
+                      width: 10px;
+                      height: 6px;
+                      background:#0B1121;
+                      border: 2px solid #ff1867;
+                      transition: 0.5s;
+                    }
+                    .ex2:hover i::after{
+                      width: 6px;
+                      left: 90%;
+                    }
+  
+                  </code>
+                </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="botao3">
+        <h4>Exemplo Botão 3</h4>
+        <p>
+          Neste exemplo, irei mostrar a estilização do botão do
+          exemplo 3.
+
+          <button class="ex3">Exemplo 3</button>
+        </p>
+
+        <div class="show-code">
+          <div class="content">
+            <h5>código HTML</h5>
+            <div class="code-content">
+              <pre>
+                    <code>
+                      ...
+                      &lt;button class="ex3"&gt; Exemplo 3 &lt;/button&gt;
+                      ...
+                    </code>
+                  </pre>
+            </div>
+          </div>
+          <div class="content">
+            <h5>código CSS</h5>
+            <div class="code-content">
+              <pre>
+                    <code>
+                      .ex3{
+                        background:#0B1121;
+                        border: 2px solid #E2E8F0;
+                        color: #E2E8F0;
+                        transition: 0.3s
+                      }
+                      .ex3:hover {
+                        border-radius:  2% 34%  2% 34%; 
+                        border: 2px solid #6eff3e;
+                        scale: 1.01;
+                      }
+                    </code>
+                  </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="botao4">
+        <h4>Exemplo Botão 4</h4>
+        <p>
+          Neste exemplo, irei mostrar a estilização do botão do
+          exemplo 4.
+
+          <button class="ex4">Exemplo 4</button>
+        </p>
+
+        <div class="show-code">
+          <div class="content">
+            <h5>código HTML</h5>
+            <div class="code-content">
+              <pre>
+                      <code>
+                        ...
+                        &lt;button class="ex4"&gt; Exemplo 4 &lt;/button&gt;
+                        ...
+                      </code>
+                    </pre>
+            </div>
+          </div>
+          <div class="content">
+            <h5>código CSS</h5>
+            <div class="code-content">
+              <pre>
+                      <code>
+                        .ex4{
+                          background:#0B1121;
+                          border: 2px solid #E2E8F0;
+                          color: #E2E8F0;
+                        }
+                        .ex4:hover{
+                          transform: translateY(-10px);
+                          letter-spacing: 1px;
+                          scale: 1.02;
+                          background-color: #1e9bff;
+                          color:#0B1121;
+                          border: 2px solid  #1e9bff;
+                          box-shadow: 10px 20px 1px  #94A3B8;
+                        }
+                      </code>
+                    </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="botao5">
+        <h4>Exemplo Botão 5</h4>
+        <p>
+          Neste exemplo, irei mostrar a estilização do botão do
+          exemplo 5.
+
+          <button class="ex5">Exemplo 5</button>
+        </p>
+
+        <div class="show-code">
+          <div class="content">
+            <h5>código HTML</h5>
+            <div class="code-content">
+              <pre>
+                        <code>
+                          ...
+                          &lt;button class="ex5"&gt; Exemplo 5 &lt;/button&gt;
+                          ...
+                        </code>
+                      </pre>
+            </div>
+          </div>
+          <div class="content">
+            <h5>código CSS</h5>
+            <div class="code-content">
+              <pre>
+                        <code>
+                          .ex5{
+                            background:#0B1121;
+                            border: 2px solid #E2E8F0;
+                            color: #E2E8F0;
+                            position: relative;
+                          }
+                          
+                          .ex5:after, .ex5:before{
+                            z-index:-1;
+                            content: "";
+                            position: absolute;
+                            background: linear-gradient(40deg,#1e9bff,#6eff3e);
+                            transition: 0.4s;  
+                          }
+                          .ex5:hover:after{
+                            inset:-3px;
+                          }
+                          .ex5:hover:before{
+                            inset:-3px;
+                            filter: blur(10px);
+                          }
+                          
+                        </code>
+                      </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

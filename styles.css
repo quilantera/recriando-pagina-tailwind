@@ -1,0 +1,353 @@
+:root{
+  
+  --background1: #0F172A;
+  --background2:#0B1121;
+  --background3:#1E293B;
+  --text-primary: #E2E8F0;
+  --text-secondary: #94A3B8;
+  --contrast: #37B6EF;
+  --1x:0.25rem;
+  --2x:0.5rem;
+  --3x:0.75rem;
+  --4x:1rem;
+  --5x:1.25rem;
+  --6x:1.5rem;
+  --7x:1.75rem;
+  --8x:2rem;
+  --9x:2.25rem;
+  --10x:2.75rem;
+  --11x:3rem;
+  --12x:3.25rem;
+  --15x:4rem;
+  --16x:4.25rem;
+  --18x:4.5rem;
+  --20x: 5.5rem;
+
+  --little-small:10px;
+  --small:14px;
+  --small-medium-medium:15px;
+  --small-medium:16px;
+  --medium:18px;
+  --medium-large: 20px;
+  --large:24px;
+  --extra:28px;
+  --extra-large: 32px;
+  --more-extra:36px;
+  --more-more-extra: 40px;
+  --big-extra:48px;
+  --title:52px;
+
+  --border-small:10%;
+  --border-medium:25%;
+  --border-circle:50%;
+
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  transition: all 0.1s ease-in;
+  scroll-margin-top: 80px;
+ 
+}
+html{
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--background1);
+  text-rendering: optimizeLegibility;
+  
+}
+h1, h2, h3 ,h4, h5, b, span, a{
+color: var(--text-primary);
+font-family: 'Inter', sans-serif;
+}
+h2{
+  font-size: var(--extra-large);
+  font-weight: 800;
+  letter-spacing: 0.1px;
+}
+h3{
+  font-size: var(--extra);
+  font-weight: 600;
+}
+h4{
+  font-size: var(--medium-large);
+  font-weight: 500;
+}
+p, li, ul{
+  color: var(--text-secondary);
+  font-family: 'Inter', sans-serif;
+  text-align: justify;  
+}
+span{
+  font-size: var(--small);
+  color: var(--contrast);
+  letter-spacing: 1px;
+  font-weight: 500;
+  transition: ease-in;
+}
+p{
+  padding-bottom: var(--3x);
+}
+a{
+  text-decoration: none;
+}
+header{
+  width:100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--4x) var(--12x);
+  background-color: var(--background2);
+  position: fixed;
+  z-index: 20;
+}
+header img{
+  height: 6vh;
+  width: auto;
+
+}
+nav{
+   display: flex;
+    gap: var(--4x);
+}
+nav a{
+  font-weight: 600;
+}
+nav a:hover{
+  color: var(--contrast);
+}
+main{
+  width: 76%;
+  padding-top: 70px;
+  padding-right: var(--10x);
+}
+aside{
+  width: 22%;
+  padding-top: 120px;
+  display: flex;
+  border-right: 0.5px solid var(--text-secondary);
+  font-size: var(--small-medium);
+}
+aside a{
+  color: var(--text-secondary);
+}
+aside li:hover a{
+  color: var(--text-primary);
+}
+section{
+  padding: var(--10x);
+  display: grid;
+  gap: var(--5x);
+}
+.code-content{
+  
+  background: var(--background3);
+}
+pre{
+  max-height: 300px;
+  overflow: scroll;
+}
+  pre::-webkit-scrollbar{
+    width:10px;;
+    height:0px;
+  }
+  pre::-webkit-scrollbar-track {
+  background: none;        
+}
+
+pre::-webkit-scrollbar-thumb {
+  background: var(--text-secondary);
+  border-radius: 2px;       
+}
+code{
+  
+  color: var(--text-primary);
+  font-family: 'Fira Code', monospace;
+  
+} 
+ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--5x);
+}
+button, .button{
+  display: block;
+  margin: var(--10x);
+  min-width: 10rem;
+  width: fit-content;
+  min-height: var(--10x); 
+  transition: 0.5s;
+  font-size: var(--medium);
+  color: var(--primary-text);
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: var(--3x); 
+  letter-spacing: 0.2px;
+  transition: 0.3s;
+}
+.button span, button span{
+  font-size: var(--medium);
+  color: var(--primary-text);
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: var(--3x); 
+  letter-spacing: 0.2px;
+  transition: 0.3s;
+
+}
+span{
+  margin: 0;
+  padding:0;
+}
+/*botão 1 */
+.ex1{
+  border: 2px solid var(--text-primary);
+  background: var(--background2);
+  color: var(--text-primary);
+ 
+}
+.ex1:hover{
+  background: var(--text-primary);
+  color: var(--background2);
+  box-shadow: 1px 1px 20px var(--text-primary);
+  letter-spacing: 0.6px;
+}
+/*botão 2 */
+.ex2{
+  background: var(--text-primary);
+  border: none;
+  position: relative;
+  transition: 0.5s
+}
+.ex2::before{
+  content: " ";
+  position: absolute;
+  inset: 2px;
+  background: var(--background2);
+  
+}
+.ex2 span{
+  position: relative;
+  z-index: 1;
+  color: var(--text-primary);
+}
+.ex2 i{
+  position: absolute;
+  inset: 0px;
+  display: block;
+}
+.ex2 i::before{
+  content: " ";
+  position: absolute;
+  top: -3px;
+  left: 80%;
+  transform: translateX(-90%);
+  width: 10px;
+  height: 6px;
+  background: var(--background2);
+  border: 2px solid #ff1867;
+
+  transition: 0.5s ;
+}
+.ex2:hover {
+  background: #ff1867;
+  letter-spacing: 1px;
+}
+.ex2:hover span{
+  letter-spacing: 0.6px;
+}
+.ex2:hover i::before{
+  width: 6px;
+  left: 10%;
+}
+.ex2 i::after{
+  content: " ";
+  position: absolute;
+  bottom: -3px;
+  left: 20%;
+  transform: translateX(-90%);
+  width: 10px;
+  height: 6px;
+  background: var(--background2);
+  border: 2px solid #ff1867;
+  transition: 0.5s;
+}
+.ex2:hover i::after{
+  width: 6px;
+  left: 90%;
+}
+/* Botao 3 */
+.ex3{
+  background: var(--background2);
+  border: 2px solid var(--text-primary);
+  color: var(--text-primary);
+  transition: 0.3s
+}
+.ex3:hover {
+  border-radius:  2% 34%  2% 34%; 
+  border: 2px solid #6eff3e;
+  scale: 1.01;
+}
+
+/* Botao 4 */
+
+.ex4{
+  background: var(--background2);
+  border: 2px solid var(--text-primary);
+  color: var(--text-primary);
+}
+.ex4:hover{
+  transform: translateY(-10px);
+  letter-spacing: 1px;
+  scale: 1.02;
+  background-color: #1e9bff;
+  color: var(--background2);
+  border: 2px solid  #1e9bff;
+  box-shadow: 10px 20px 1px var(--text-secondary);
+}
+
+
+/* Botão 5 */
+.ex5{
+  background: var(--background2);
+  border: 2px solid var(--text-primary);
+  color: var(--text-primary);
+  position: relative;
+}
+
+.ex5:after, .ex5:before{
+  z-index:-1;
+  content: "";
+  position: absolute;
+  background: linear-gradient(40deg,#1e9bff,#6eff3e);
+  transition: 0.4s;  
+}
+.ex5:hover:after{
+  inset:-3px;
+}
+.ex5:hover:before{
+  inset:-3px;
+  filter: blur(10px);
+}
+
+#botao1, #botao2, #botao3, #botao4, #botao5 {
+  padding-top: var(--10x);
+ 
+}
+#botao1 p, #botao2 p, #botao3 p, #botao4 p, #botao5 p{
+  padding-top: var(--4x);
+ 
+}
+h5{
+  font-size: var(--little);
+  padding: var(--2x) 0;
+}
